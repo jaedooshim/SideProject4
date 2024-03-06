@@ -23,7 +23,7 @@ export class MailService {
     await this.mailerService.sendMail({
       to: email,
       subject: 'TEST Email',
-      text: `테스트 :: 아래 링크를 클릭하여 이메일 인증을 완료해주세요... :https://mail.naver.com/v2/folders/0?code=${verifyEmailCode}`,
+      text: `테스트 :: 아래 링크를 클릭하여 이메일 인증을 완료해주세요...`,
     });
   }
   verifyCode(): string {
